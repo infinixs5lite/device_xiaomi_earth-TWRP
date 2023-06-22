@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-FDEVICE="fog"
+FDEVICE="earth"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -87,7 +87,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# R12.1 Settings
 	export FOX_VERSION="R12.1_0"
 	export FOX_VARIANT="A12"
-	export OF_MAINTAINER="Sushrut1101"
+	export OF_MAINTAINER="infinixs5lite"
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
