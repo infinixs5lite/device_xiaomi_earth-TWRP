@@ -102,6 +102,10 @@ MTK_HARDWARE := true
 
 # Workaround for error copying files to recovery ramdisk
 TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM := system
+TARGET_COPY_OUT_SYSTEMEXT4 := system_ext4
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
