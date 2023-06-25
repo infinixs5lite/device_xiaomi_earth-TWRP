@@ -1,4 +1,4 @@
-# Android device tree for Android 22120RN86C (earth) please don't it for Android 11 and for fox without adding the reguir .if u must use it for pitch black u know where to change commit to avoid error 
+# Android device tree for Android 22120RN86C (earth) please don't use it for Android 11 and for fox without adding the reguir .if u must use it for pitch black u know where to change commit to avoid error 
 
 ```
 #
