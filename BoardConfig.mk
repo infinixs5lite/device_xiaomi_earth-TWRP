@@ -180,7 +180,6 @@ TW_HAS_MTP := true
 TW_BUILD_VERSION := Build by Chinedu +2349039121780
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_MTP_DEVICE := /dev/mtp_usb
 
 # Logcat
 TWRP_INCLUDE_LOGCAT := true
