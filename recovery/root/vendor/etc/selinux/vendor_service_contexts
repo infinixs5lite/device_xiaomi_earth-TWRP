@@ -1,0 +1,22 @@
+#line 1 "vendor/nxp/pn8xt/sepolicy/service_contexts"
+# add for mi_nfc
+mi_nfc                                u:object_r:mi_nfc_service:s0
+#line 1 "device/mediatek/sepolicy/bsp/non_plat/service_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+android.hardware.neuralnetworks.IDevice/mtk-gpu_shim    u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-dsp_shim    u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-mdla_shim   u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-neuron_shim u:object_r:hal_neuralnetworks_service:s0
+
+#C3T code for HQ-229451 by zhoumengxuan at 2022.8.8 start
+com.silead.fingerprintService  u:object_r:silead_fp_service:s0
+#C3T code for HQ-229451 by zhoumengxuan at 2022.8.8 end
+#C3T code for HQ-229673 by zhoumengxuan at 22.8.31 start
+vendor.fpsensor.hardware.fpsensorhidlsvc::IFpsensorHidlSvc u:object_r:fp_ext_svc2_service:s0
+#C3T code for HQ-229673 by zhoumengxuan at 22.8.31 end
+#line 1 "device/xiaomi/earth/displayfeature/1.0/sepolicy/service_contexts"
+# xiaomi Services
+DisplayFeatureControl                          u:object_r:DisplayFeatureControl_service:s0
