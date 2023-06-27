@@ -1,3 +1,5 @@
+ro.mediatek.platform=MT6768
+ro.hardware=mt6768
 ro.product.device=earth
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.sys.usb.storage.type=mtp
