@@ -23,23 +23,32 @@ PRODUCT_TARGET_VNDK_VERSION := 31
 # API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
-# Boot control HAL
+# Virtual A/B
+ENABLE_VIRTUAL_AB := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+# Health HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service \
+    libhealthd.$(PRODUCT_PLATFORM)
+
+# Boot Control HAL
+PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-mtkimpl.recovery \
     android.hardware.boot@1.1-mtkimpl
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctrl
 
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
-    Fastbootd
+    fastbootd
 
 # MTK Plpath Utils
 PRODUCT_PACKAGES += \
     mtk_plpath_utils.recovery
-
-PRODUCT_PACKAGES += \
-    bootctrl.mt6768
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
@@ -50,6 +59,3 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctrl
