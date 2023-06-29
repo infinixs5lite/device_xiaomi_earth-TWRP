@@ -1,4 +1,4 @@
-#fstab
+# fstab
 #
 # mount point    fstype  device                             device2                flags
 
