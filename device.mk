@@ -21,11 +21,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6768
 
+# Magisk
+PRODUCT_PACKAGES += \
+    99-magisk
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    Fastbootd
 
 # API
 PRODUCT_TARGET_VNDK_VERSION := 31
