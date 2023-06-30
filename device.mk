@@ -49,7 +49,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service \
-    libhealthd.$(PRODUCT_PLATFORM
+    libhealthd.$(PRODUCT_PLATFORM)
 
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
